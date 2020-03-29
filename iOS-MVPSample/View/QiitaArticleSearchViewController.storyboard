@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B5M-bT-fqf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Qiita Article-->
+        <scene sceneID="Uee-CU-fLf">
+            <objects>
+                <viewController id="B5M-bT-fqf" customClass="QiitaArticleSearchViewController" customModule="iOS_MVPSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Px-MP-bYV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="username" translatesAutoresizingMaskIntoConstraints="NO" id="bso-Xg-dBB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ok9-43-buX">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bcT-lZ-YWb">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bso-Xg-dBB" firstAttribute="leading" secondItem="cOE-f5-kiN" secondAttribute="leading" id="5lQ-Ar-NNU"/>
+                            <constraint firstItem="cOE-f5-kiN" firstAttribute="trailing" secondItem="bso-Xg-dBB" secondAttribute="trailing" id="C8X-TY-tLY"/>
+                            <constraint firstItem="bcT-lZ-YWb" firstAttribute="centerX" secondItem="9Px-MP-bYV" secondAttribute="centerX" id="Evx-fg-8G0"/>
+                            <constraint firstItem="Ok9-43-buX" firstAttribute="leading" secondItem="cOE-f5-kiN" secondAttribute="leading" id="N7D-A9-2kE"/>
+                            <constraint firstItem="bso-Xg-dBB" firstAttribute="top" secondItem="cOE-f5-kiN" secondAttribute="top" id="QgC-g8-oxY"/>
+                            <constraint firstItem="cOE-f5-kiN" firstAttribute="trailing" secondItem="Ok9-43-buX" secondAttribute="trailing" id="b1g-io-MtG"/>
+                            <constraint firstItem="bcT-lZ-YWb" firstAttribute="centerY" secondItem="9Px-MP-bYV" secondAttribute="centerY" id="ruS-VR-fUV"/>
+                            <constraint firstItem="cOE-f5-kiN" firstAttribute="bottom" secondItem="Ok9-43-buX" secondAttribute="bottom" id="ry1-20-27c"/>
+                            <constraint firstItem="Ok9-43-buX" firstAttribute="top" secondItem="bso-Xg-dBB" secondAttribute="bottom" symbolic="YES" id="vOr-u7-Y7g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cOE-f5-kiN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search Qiita Article" id="l8N-XP-glj"/>
+                    <connections>
+                        <outlet property="indicator" destination="bcT-lZ-YWb" id="JN9-xK-8fN"/>
+                        <outlet property="searchBar" destination="bso-Xg-dBB" id="maP-Ql-bMf"/>
+                        <outlet property="tableView" destination="Ok9-43-buX" id="tlr-gp-5Hl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LdP-Sq-FyE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="114"/>
+        </scene>
+    </scenes>
+</document>

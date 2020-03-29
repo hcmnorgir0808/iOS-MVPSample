@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C6BEEA162430D525006C0E45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA152430D525006C0E45 /* AppDelegate.swift */; };
-		C6BEEA182430D525006C0E45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA172430D525006C0E45 /* SceneDelegate.swift */; };
-		C6BEEA1A2430D525006C0E45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA192430D525006C0E45 /* ViewController.swift */; };
-		C6BEEA1D2430D525006C0E45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEA1B2430D525006C0E45 /* Main.storyboard */; };
 		C6BEEA1F2430D52E006C0E45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEA1E2430D52E006C0E45 /* Assets.xcassets */; };
 		C6BEEA222430D52E006C0E45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEA202430D52E006C0E45 /* LaunchScreen.storyboard */; };
 		C6BEEA2D2430D52F006C0E45 /* iOS_MVPSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA2C2430D52F006C0E45 /* iOS_MVPSampleTests.swift */; };
 		C6BEEA382430D52F006C0E45 /* iOS_MVPSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA372430D52F006C0E45 /* iOS_MVPSampleUITests.swift */; };
+		C6BEEA472430D6D3006C0E45 /* QiitaArticleSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA462430D6D3006C0E45 /* QiitaArticleSearchViewController.swift */; };
+		C6BEEA492430D6EC006C0E45 /* QiitaArticleSearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEA482430D6EC006C0E45 /* QiitaArticleSearchViewController.storyboard */; };
+		C6BEEA4C2430DB55006C0E45 /* QiitaArticleSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA4B2430DB55006C0E45 /* QiitaArticleSearchPresenter.swift */; };
+		C6BEEA4F2430DF75006C0E45 /* QiitaArticleSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA4E2430DF75006C0E45 /* QiitaArticleSearchModel.swift */; };
+		C6BEEA522430E439006C0E45 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA512430E439006C0E45 /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +39,6 @@
 /* Begin PBXFileReference section */
 		C6BEEA122430D525006C0E45 /* iOS-MVPSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-MVPSample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BEEA152430D525006C0E45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6BEEA172430D525006C0E45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C6BEEA192430D525006C0E45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C6BEEA1C2430D525006C0E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6BEEA1E2430D52E006C0E45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6BEEA212430D52E006C0E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6BEEA232430D52E006C0E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,11 @@
 		C6BEEA332430D52F006C0E45 /* iOS-MVPSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-MVPSampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BEEA372430D52F006C0E45 /* iOS_MVPSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_MVPSampleUITests.swift; sourceTree = "<group>"; };
 		C6BEEA392430D52F006C0E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6BEEA462430D6D3006C0E45 /* QiitaArticleSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleSearchViewController.swift; sourceTree = "<group>"; };
+		C6BEEA482430D6EC006C0E45 /* QiitaArticleSearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QiitaArticleSearchViewController.storyboard; sourceTree = "<group>"; };
+		C6BEEA4B2430DB55006C0E45 /* QiitaArticleSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleSearchPresenter.swift; sourceTree = "<group>"; };
+		C6BEEA4E2430DF75006C0E45 /* QiitaArticleSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleSearchModel.swift; sourceTree = "<group>"; };
+		C6BEEA512430E439006C0E45 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				C6BEEA152430D525006C0E45 /* AppDelegate.swift */,
-				C6BEEA172430D525006C0E45 /* SceneDelegate.swift */,
-				C6BEEA192430D525006C0E45 /* ViewController.swift */,
-				C6BEEA1B2430D525006C0E45 /* Main.storyboard */,
 				C6BEEA1E2430D52E006C0E45 /* Assets.xcassets */,
-				C6BEEA202430D52E006C0E45 /* LaunchScreen.storyboard */,
 				C6BEEA232430D52E006C0E45 /* Info.plist */,
+				C6BEEA202430D52E006C0E45 /* LaunchScreen.storyboard */,
+				C6BEEA4D2430DF49006C0E45 /* Model */,
+				C6BEEA4A2430D835006C0E45 /* Presenter */,
+				C6BEEA452430D6BD006C0E45 /* View */,
 			);
 			path = "iOS-MVPSample";
 			sourceTree = "<group>";
@@ -126,6 +130,40 @@
 				C6BEEA392430D52F006C0E45 /* Info.plist */,
 			);
 			path = "iOS-MVPSampleUITests";
+			sourceTree = "<group>";
+		};
+		C6BEEA452430D6BD006C0E45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEEA462430D6D3006C0E45 /* QiitaArticleSearchViewController.swift */,
+				C6BEEA482430D6EC006C0E45 /* QiitaArticleSearchViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6BEEA4A2430D835006C0E45 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEEA4B2430DB55006C0E45 /* QiitaArticleSearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C6BEEA4D2430DF49006C0E45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEEA502430E426006C0E45 /* Entity */,
+				C6BEEA4E2430DF75006C0E45 /* QiitaArticleSearchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6BEEA502430E426006C0E45 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C6BEEA512430E439006C0E45 /* Article.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +272,7 @@
 			files = (
 				C6BEEA222430D52E006C0E45 /* LaunchScreen.storyboard in Resources */,
 				C6BEEA1F2430D52E006C0E45 /* Assets.xcassets in Resources */,
-				C6BEEA1D2430D525006C0E45 /* Main.storyboard in Resources */,
+				C6BEEA492430D6EC006C0E45 /* QiitaArticleSearchViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6BEEA1A2430D525006C0E45 /* ViewController.swift in Sources */,
 				C6BEEA162430D525006C0E45 /* AppDelegate.swift in Sources */,
-				C6BEEA182430D525006C0E45 /* SceneDelegate.swift in Sources */,
+				C6BEEA4C2430DB55006C0E45 /* QiitaArticleSearchPresenter.swift in Sources */,
+				C6BEEA472430D6D3006C0E45 /* QiitaArticleSearchViewController.swift in Sources */,
+				C6BEEA4F2430DF75006C0E45 /* QiitaArticleSearchModel.swift in Sources */,
+				C6BEEA522430E439006C0E45 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C6BEEA1B2430D525006C0E45 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C6BEEA1C2430D525006C0E45 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C6BEEA202430D52E006C0E45 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
