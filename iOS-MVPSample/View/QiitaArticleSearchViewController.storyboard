@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B5M-bT-fqf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MLM-pc-XBe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -7,50 +7,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search Qiita Article-->
-        <scene sceneID="Uee-CU-fLf">
+        <!--Qiita Article Search View Controller-->
+        <scene sceneID="cKz-ez-jis">
             <objects>
-                <viewController id="B5M-bT-fqf" customClass="QiitaArticleSearchViewController" customModule="iOS_MVPSample" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9Px-MP-bYV">
+                <viewController id="MLM-pc-XBe" customClass="QiitaArticleSearchViewController" customModule="iOS_MVPSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="znt-Aa-CQL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="username" translatesAutoresizingMaskIntoConstraints="NO" id="bso-Xg-dBB">
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Kon-eu-3gY">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ok9-43-buX">
-                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dEr-uT-rRG">
+                                <rect key="frame" x="0.0" y="100" width="414" height="713"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="bcT-lZ-YWb">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="aSX-WD-Y8Q">
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bso-Xg-dBB" firstAttribute="leading" secondItem="cOE-f5-kiN" secondAttribute="leading" id="5lQ-Ar-NNU"/>
-                            <constraint firstItem="cOE-f5-kiN" firstAttribute="trailing" secondItem="bso-Xg-dBB" secondAttribute="trailing" id="C8X-TY-tLY"/>
-                            <constraint firstItem="bcT-lZ-YWb" firstAttribute="centerX" secondItem="9Px-MP-bYV" secondAttribute="centerX" id="Evx-fg-8G0"/>
-                            <constraint firstItem="Ok9-43-buX" firstAttribute="leading" secondItem="cOE-f5-kiN" secondAttribute="leading" id="N7D-A9-2kE"/>
-                            <constraint firstItem="bso-Xg-dBB" firstAttribute="top" secondItem="cOE-f5-kiN" secondAttribute="top" id="QgC-g8-oxY"/>
-                            <constraint firstItem="cOE-f5-kiN" firstAttribute="trailing" secondItem="Ok9-43-buX" secondAttribute="trailing" id="b1g-io-MtG"/>
-                            <constraint firstItem="bcT-lZ-YWb" firstAttribute="centerY" secondItem="9Px-MP-bYV" secondAttribute="centerY" id="ruS-VR-fUV"/>
-                            <constraint firstItem="cOE-f5-kiN" firstAttribute="bottom" secondItem="Ok9-43-buX" secondAttribute="bottom" id="ry1-20-27c"/>
-                            <constraint firstItem="Ok9-43-buX" firstAttribute="top" secondItem="bso-Xg-dBB" secondAttribute="bottom" symbolic="YES" id="vOr-u7-Y7g"/>
+                            <constraint firstItem="Kon-eu-3gY" firstAttribute="leading" secondItem="zfN-Mz-d4D" secondAttribute="leading" id="3Tz-v4-7QI"/>
+                            <constraint firstItem="aSX-WD-Y8Q" firstAttribute="centerY" secondItem="znt-Aa-CQL" secondAttribute="centerY" id="5Xy-pD-Pdy"/>
+                            <constraint firstItem="aSX-WD-Y8Q" firstAttribute="centerX" secondItem="znt-Aa-CQL" secondAttribute="centerX" id="6B6-UF-ah3"/>
+                            <constraint firstItem="dEr-uT-rRG" firstAttribute="leading" secondItem="zfN-Mz-d4D" secondAttribute="leading" id="Dk4-fi-ptz"/>
+                            <constraint firstItem="dEr-uT-rRG" firstAttribute="bottom" secondItem="zfN-Mz-d4D" secondAttribute="bottom" id="Pwv-BV-fgF"/>
+                            <constraint firstItem="dEr-uT-rRG" firstAttribute="top" secondItem="Kon-eu-3gY" secondAttribute="bottom" symbolic="YES" id="XKu-iy-4mD"/>
+                            <constraint firstItem="dEr-uT-rRG" firstAttribute="trailing" secondItem="zfN-Mz-d4D" secondAttribute="trailing" id="oWj-BD-T0M"/>
+                            <constraint firstItem="Kon-eu-3gY" firstAttribute="top" secondItem="zfN-Mz-d4D" secondAttribute="top" id="riA-iL-Azz"/>
+                            <constraint firstItem="Kon-eu-3gY" firstAttribute="trailing" secondItem="zfN-Mz-d4D" secondAttribute="trailing" id="yyt-q4-Mqt"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cOE-f5-kiN"/>
+                        <viewLayoutGuide key="safeArea" id="zfN-Mz-d4D"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Search Qiita Article" id="l8N-XP-glj"/>
+                    <navigationItem key="navigationItem" id="V9j-9q-2Oi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="indicator" destination="bcT-lZ-YWb" id="JN9-xK-8fN"/>
-                        <outlet property="searchBar" destination="bso-Xg-dBB" id="maP-Ql-bMf"/>
-                        <outlet property="tableView" destination="Ok9-43-buX" id="tlr-gp-5Hl"/>
+                        <outlet property="indicator" destination="aSX-WD-Y8Q" id="Yg1-bN-jcZ"/>
+                        <outlet property="searchBar" destination="Kon-eu-3gY" id="Dir-BW-MNG"/>
+                        <outlet property="tableView" destination="dEr-uT-rRG" id="owT-HD-V7D"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LdP-Sq-FyE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGb-nn-8tq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="114"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="87.723214285714278"/>
         </scene>
     </scenes>
 </document>

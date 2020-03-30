@@ -26,6 +26,7 @@ final class QiitaArticleSearchViewController: UIViewController {
         indicator.hidesWhenStopped = true
         searchBar.delegate = self
         tableView.dataSource = self
+        tableView.delegate = self
         // Do any additional setup after loading the view.
     }
 }
@@ -47,6 +48,14 @@ extension QiitaArticleSearchViewController: UITableViewDataSource {
     
     
 }
+
+extension QiitaArticleSearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "QiitaArticleDetailViewController", bundle: nil).instantiateInitialViewController() as! QiitaArticleDetailViewController
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
 extension QiitaArticleSearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         indicator.startAnimating()

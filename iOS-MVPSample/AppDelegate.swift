@@ -14,18 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        let qiitaArticleSearchViewController = UIStoryboard(name: "QiitaArticleSearchViewController", bundle: nil).instantiateInitialViewController() as! QiitaArticleSearchViewController
-        let navigationController = UINavigationController(rootViewController: qiitaArticleSearchViewController)
         
-        let model = QiitaArticleSearchModel()
-        let presenter = QiitaArticleSearchPresenter(model: model, view: qiitaArticleSearchViewController)
+        let mainTabViewController = MainTabViewController()
         
-        qiitaArticleSearchViewController.inject(presenter: presenter)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = mainTabViewController
+        self.window?.makeKeyAndVisible()
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
         return true
     }
 }

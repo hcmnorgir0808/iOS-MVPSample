@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C645AEA52432268C005CBEBB /* QiitaArticleDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C645AEA42432268C005CBEBB /* QiitaArticleDetailViewController.storyboard */; };
+		C645AEA7243226F4005CBEBB /* QiitaArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AEA6243226F4005CBEBB /* QiitaArticleDetailViewController.swift */; };
+		C645AEA924322A93005CBEBB /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AEA824322A93005CBEBB /* MainTabViewController.swift */; };
+		C645AEAF24322C56005CBEBB /* QiitaArticleSearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C645AEAE24322C56005CBEBB /* QiitaArticleSearchViewController.storyboard */; };
 		C6BEEA162430D525006C0E45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA152430D525006C0E45 /* AppDelegate.swift */; };
 		C6BEEA1F2430D52E006C0E45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEA1E2430D52E006C0E45 /* Assets.xcassets */; };
 		C6BEEA222430D52E006C0E45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEA202430D52E006C0E45 /* LaunchScreen.storyboard */; };
 		C6BEEA2D2430D52F006C0E45 /* iOS_MVPSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA2C2430D52F006C0E45 /* iOS_MVPSampleTests.swift */; };
 		C6BEEA382430D52F006C0E45 /* iOS_MVPSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA372430D52F006C0E45 /* iOS_MVPSampleUITests.swift */; };
 		C6BEEA472430D6D3006C0E45 /* QiitaArticleSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA462430D6D3006C0E45 /* QiitaArticleSearchViewController.swift */; };
-		C6BEEA492430D6EC006C0E45 /* QiitaArticleSearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEA482430D6EC006C0E45 /* QiitaArticleSearchViewController.storyboard */; };
 		C6BEEA4C2430DB55006C0E45 /* QiitaArticleSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA4B2430DB55006C0E45 /* QiitaArticleSearchPresenter.swift */; };
 		C6BEEA4F2430DF75006C0E45 /* QiitaArticleSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA4E2430DF75006C0E45 /* QiitaArticleSearchModel.swift */; };
 		C6BEEA522430E439006C0E45 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA512430E439006C0E45 /* Article.swift */; };
@@ -37,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C645AEA42432268C005CBEBB /* QiitaArticleDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QiitaArticleDetailViewController.storyboard; sourceTree = "<group>"; };
+		C645AEA6243226F4005CBEBB /* QiitaArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleDetailViewController.swift; sourceTree = "<group>"; };
+		C645AEA824322A93005CBEBB /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		C645AEAE24322C56005CBEBB /* QiitaArticleSearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QiitaArticleSearchViewController.storyboard; sourceTree = "<group>"; };
 		C6BEEA122430D525006C0E45 /* iOS-MVPSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-MVPSample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BEEA152430D525006C0E45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6BEEA1E2430D52E006C0E45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,7 +56,6 @@
 		C6BEEA372430D52F006C0E45 /* iOS_MVPSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_MVPSampleUITests.swift; sourceTree = "<group>"; };
 		C6BEEA392430D52F006C0E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6BEEA462430D6D3006C0E45 /* QiitaArticleSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleSearchViewController.swift; sourceTree = "<group>"; };
-		C6BEEA482430D6EC006C0E45 /* QiitaArticleSearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QiitaArticleSearchViewController.storyboard; sourceTree = "<group>"; };
 		C6BEEA4B2430DB55006C0E45 /* QiitaArticleSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleSearchPresenter.swift; sourceTree = "<group>"; };
 		C6BEEA4E2430DF75006C0E45 /* QiitaArticleSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleSearchModel.swift; sourceTree = "<group>"; };
 		C6BEEA512430E439006C0E45 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
@@ -136,7 +142,10 @@
 			isa = PBXGroup;
 			children = (
 				C6BEEA462430D6D3006C0E45 /* QiitaArticleSearchViewController.swift */,
-				C6BEEA482430D6EC006C0E45 /* QiitaArticleSearchViewController.storyboard */,
+				C645AEAE24322C56005CBEBB /* QiitaArticleSearchViewController.storyboard */,
+				C645AEA6243226F4005CBEBB /* QiitaArticleDetailViewController.swift */,
+				C645AEA42432268C005CBEBB /* QiitaArticleDetailViewController.storyboard */,
+				C645AEA824322A93005CBEBB /* MainTabViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,9 +279,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C645AEA52432268C005CBEBB /* QiitaArticleDetailViewController.storyboard in Resources */,
+				C645AEAF24322C56005CBEBB /* QiitaArticleSearchViewController.storyboard in Resources */,
 				C6BEEA222430D52E006C0E45 /* LaunchScreen.storyboard in Resources */,
 				C6BEEA1F2430D52E006C0E45 /* Assets.xcassets in Resources */,
-				C6BEEA492430D6EC006C0E45 /* QiitaArticleSearchViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +310,9 @@
 				C6BEEA162430D525006C0E45 /* AppDelegate.swift in Sources */,
 				C6BEEA4C2430DB55006C0E45 /* QiitaArticleSearchPresenter.swift in Sources */,
 				C6BEEA472430D6D3006C0E45 /* QiitaArticleSearchViewController.swift in Sources */,
+				C645AEA7243226F4005CBEBB /* QiitaArticleDetailViewController.swift in Sources */,
 				C6BEEA4F2430DF75006C0E45 /* QiitaArticleSearchModel.swift in Sources */,
+				C645AEA924322A93005CBEBB /* MainTabViewController.swift in Sources */,
 				C6BEEA522430E439006C0E45 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
