@@ -15,6 +15,7 @@ protocol QiitaArticleSearchPresenterInput {
 
 protocol QiitaArticleSearchPresenterOutput {
     func showArticle(articles: [Article])
+    func hideUIActivityIndicatorView()
 }
 
 final class QiitaArticleSearchPresenter: QiitaArticleSearchPresenterInput {
@@ -30,7 +31,11 @@ final class QiitaArticleSearchPresenter: QiitaArticleSearchPresenterInput {
     }
     
     func didTapSearchButton(text: String?) {
-        guard let query = text, !query.isEmpty else { return }
+        guard let query = text, !query.isEmpty else {
+            view.hideUIActivityIndicatorView()
+            return
+        }
+        
         model.fetchArticle(query: query) { [weak self] articles in
             self?.articles = articles
             

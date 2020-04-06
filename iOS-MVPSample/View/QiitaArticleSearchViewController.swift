@@ -68,4 +68,8 @@ extension QiitaArticleSearchViewController: QiitaArticleSearchPresenterOutput {
         indicator.stopAnimating()
         tableView.reloadData()
     }
+    
+    func hideUIActivityIndicatorView() {
+        indicator.stopAnimating()
+    }
 }
