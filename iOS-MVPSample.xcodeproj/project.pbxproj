@@ -11,6 +11,7 @@
 		C645AEA7243226F4005CBEBB /* QiitaArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AEA6243226F4005CBEBB /* QiitaArticleDetailViewController.swift */; };
 		C645AEA924322A93005CBEBB /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AEA824322A93005CBEBB /* MainTabViewController.swift */; };
 		C645AEAF24322C56005CBEBB /* QiitaArticleSearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C645AEAE24322C56005CBEBB /* QiitaArticleSearchViewController.storyboard */; };
+		C6A7E91D2447581B008E2279 /* ArticleMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A7E91C2447581B008E2279 /* ArticleMock.swift */; };
 		C6BEEA162430D525006C0E45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEEA152430D525006C0E45 /* AppDelegate.swift */; };
 		C6BEEA1F2430D52E006C0E45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEA1E2430D52E006C0E45 /* Assets.xcassets */; };
 		C6BEEA222430D52E006C0E45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BEEA202430D52E006C0E45 /* LaunchScreen.storyboard */; };
@@ -44,6 +45,7 @@
 		C645AEA6243226F4005CBEBB /* QiitaArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaArticleDetailViewController.swift; sourceTree = "<group>"; };
 		C645AEA824322A93005CBEBB /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		C645AEAE24322C56005CBEBB /* QiitaArticleSearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QiitaArticleSearchViewController.storyboard; sourceTree = "<group>"; };
+		C6A7E91C2447581B008E2279 /* ArticleMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleMock.swift; sourceTree = "<group>"; };
 		C6BEEA122430D525006C0E45 /* iOS-MVPSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-MVPSample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BEEA152430D525006C0E45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6BEEA1E2430D52E006C0E45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				C6BEEA2C2430D52F006C0E45 /* iOS_MVPSampleTests.swift */,
+				C6A7E91C2447581B008E2279 /* ArticleMock.swift */,
 				C6BEEA2E2430D52F006C0E45 /* Info.plist */,
 			);
 			path = "iOS-MVPSampleTests";
@@ -321,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A7E91D2447581B008E2279 /* ArticleMock.swift in Sources */,
 				C6BEEA2D2430D52F006C0E45 /* iOS_MVPSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
