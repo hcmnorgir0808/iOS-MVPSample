@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Qiita Article Search View Controller-->
+        <!--iOS-MVPSample-->
         <scene sceneID="cKz-ez-jis">
             <objects>
                 <viewController id="MLM-pc-XBe" customClass="QiitaArticleSearchViewController" customModule="iOS_MVPSample" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zfN-Mz-d4D"/>
                     </view>
-                    <navigationItem key="navigationItem" id="V9j-9q-2Oi"/>
+                    <navigationItem key="navigationItem" title="iOS-MVPSample" id="V9j-9q-2Oi"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="indicator" destination="aSX-WD-Y8Q" id="Yg1-bN-jcZ"/>
